@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Port_Folio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="aside">
+        <div class="navbar">
+          <ul>
+            <li><a id="home" href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a id="home" href="CV.html">CV</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a  id="home" href="skill.html">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-content slide-down">
+          <h1>Contact Me</h1>
+          <form action="/submit" method="POST" class="contact-form" id="Btn">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="Number">Number</label>
+              <input type="number" id="Number" name="Number" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p>We Will Never Share Your Details</p>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
